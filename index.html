@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+    </script>
   <title>Web Gabut Buat Yang Punya Teman Atau Cewe</title>
   <style>
     /* Your existing CSS styles */
@@ -15,30 +20,8 @@
     </div>
   </div>
 
-  <audio id="background-music" autoplay loop muted>
-    <source src="desah.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
-
-  <script>
-    const backgroundMusic = document.getElementById('background-music');
-
-    // Unmute the audio after 1 second to bypass Chrome's autoplay restriction
-    setTimeout(function() {
-      backgroundMusic.muted = false;
-    }, 1000);
-
-    // Display a toast notification instead of an alert message
-    window.onload = function() {
-      backgroundMusic.play();
-      const toast = document.createElement("div");
-      toast.innerHTML = "Kado buat kamu!";
-      toast.className = "toast";
-      document.body.appendChild(toast);
-      setTimeout(function() {
-        toast.style.opacity = "0";
-      }, 3000); // Hide the toast after 3 seconds
-    };
-  </script>
+  <audio autoplay>
+    <source src="desah.mp3">
+</audio>
 </body>
 </html>
