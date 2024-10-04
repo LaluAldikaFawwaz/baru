@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Gabut Buat Yang Punya Teman Atau Cewe</title>
+  <style>
+    body {
+      background-color: #000; /* Set the background color to black */
+    }
+    #screen {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff; /* Set the screen background color to white */
+      padding: 20px;
+      border: 1px solid #000; /* Add a black border to the screen */
+    }
+
+    #title {
+      color: #fff; /* Set the title color to white */
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+
+    .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  </style>
+</head>
+<body>
+  <h1 id="title">Prank</h1> <!-- Add a title at the top -->
+
+  <div id="screen"> <!-- Add a screen in the middle -->
+    <div class="container">
+        <h1>ihdidhah</h1>
+      </div>
+    >
+  </div>
+
+  <audio id="background-music" autoplay loop>
+    <source src="desah.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const backgroundMusic = document.getElementById('background-music');
+
+    // Play the music when the page loads
+    window.onload = function() {
+      backgroundMusic.play();
+    };
+  </script>
+</body>
+</html>
